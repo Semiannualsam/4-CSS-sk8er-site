@@ -1,0 +1,111 @@
+body {
+  background-image: url('./assets/bg.jpg');
+}
+main {
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav.social-media {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+nav.social-media i {
+  width: 25px;
+  text-align: center;
+}
+#fb {
+  padding: 12px;
+  background-color: rgba(15, 90, 253, 0.63);
+  color: rgb(243, 244, 245);
+  font-size: 25px;
+}
+#rss {
+  padding: 12px;
+  background-color: rgba(211, 147, 9, 0.671);
+  color: rgb(243, 244, 245);
+  font-size: 25px;
+}
+#twitter {
+  padding: 12px;
+  background-color: rgba(13, 159, 196, 0.623);
+  color: rgb(243, 244, 245);
+  font-size: 25px;
+}
+#yt {
+  padding: 12px;
+  background-color: rgba(173, 13, 13, 0.63);
+  color: rgb(243, 244, 245);
+  font-size: 25px;
+}
+
+nav.top-boxes {
+  padding: 5px x 7px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+nav.top-boxes i {
+  padding: 8px 27px;
+  background-color: #bb0707ef;
+  color: rgb(243, 244, 245);
+  font-size: 19px;
+  box-shadow: 5px 5px rgba(128, 128, 128, 0.356);
+}
+#hero-banner {
+  background: url('./assets/top-image.png');
+  background-size: 150%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-position-x: -6rem;
+  background-position-y: -6rem;
+  box-shadow: 5px 5px rgba(128, 128, 128, 0.356);
+}
+#hero-banner-overlay {
+  background: url('./assets/grid.png');
+  height: 100%;
+  width: 100%;
+  background-size: 300%;
+  opacity: 0.17;
+  background-position-x: -6rem;
+  background-position-y: -6rem;
+  position: absolute;
+  z-index: 11;
+}
+#banner {
+  position: relative;
+  height: 300px;
+}
+#logo {
+  position: absolute;
+  top: 30px;
+  z-index: 12;
+  left: 5px;
+}
+
+#cards1 {
+  height: 250px;
+  width: 400px;
+  border: 2px solid rgb(223, 146, 146);
+}
+#cards2 {
+  height: 250px;
+  width: 400px;
+  border: 2px solid rgb(255, 255, 255);
+}
+#cards3 {
+  height: 250px;
+  width: 400px;
+  border: 2px solid rgb(160, 157, 212);
+}
+.articles {
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+  margin-top: 20px;
+  padding: 12px;
+}
