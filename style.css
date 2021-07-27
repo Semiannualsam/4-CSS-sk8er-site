@@ -13,6 +13,7 @@ nav.social-media {
 }
 nav.social-media i {
   width: 25px;
+  height: 25px;
   text-align: center;
 }
 #fb {
@@ -57,13 +58,14 @@ nav.top-boxes i {
 #hero-banner {
   background: url('./assets/top-image.png');
   background-size: 150%;
+  border: 5px solid white;
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
   background-position-x: -6rem;
   background-position-y: -6rem;
-  box-shadow: 5px 5px rgba(128, 128, 128, 0.356);
+  box-shadow: 5px 5px rgba(53, 52, 52, 0.521);
 }
 #hero-banner-overlay {
   background: url('./assets/grid.png');
@@ -87,25 +89,176 @@ nav.top-boxes i {
   left: 5px;
 }
 
+.articles {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  margin-top: 20px;
+  padding: 1px;
+}
+
+#text1 {
+  text-justify: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
 #cards1 {
   height: 250px;
-  width: 400px;
-  border: 2px solid rgb(223, 146, 146);
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.877);
+}
+#text2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #cards2 {
   height: 250px;
-  width: 400px;
-  border: 2px solid rgb(255, 255, 255);
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.877);
+}
+#text3 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #cards3 {
   height: 250px;
-  width: 400px;
-  border: 2px solid rgb(160, 157, 212);
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.877);
 }
-.articles {
-  display: flex;
-  justify-content: flex-end;
-  text-align: center;
+.mosaic {
+  border: rgba(173, 13, 13, 0) solid;
+  height: 400px;
+  width: 100%;
   margin-top: 20px;
-  padding: 12px;
+  display: grid;
+  grid-template-rows: fr1 fr1 fr1;
+  grid-gap: 18px;
+  grid-template-areas:
+    'lance rodney tommy'
+    'steve steve tommy';
 }
+
+#lance {
+  height: 100%;
+  width: 100%;
+  border: 4px solid white;
+  background: url('./assets/sk8er-4.png');
+  background-position-x: -8rem;
+  background-position-y: -2rem;
+  grid-area: lance;
+  color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#rodney {
+  height: 100%;
+  width: 100%;
+  border: 4px solid white;
+  background: url('./assets/sk8er-3.png');
+  background-position-x: -1rem;
+  background-position-y: -2rem;
+  grid-area: rodney;
+  color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#steve {
+  height: 100%;
+  width: 100%;
+  border: 4px solid white;
+  background: url('./assets/sk8er-1.png');
+  background-position-x: -1rem;
+  background-position-y: -6rem;
+  grid-area: steve;
+  color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#tommy {
+  height: 100%;
+  width: 100%;
+  border: 4px solid white;
+  background: url('./assets/sk8er-2.png');
+  background-position-x: 27rem;
+  background-position-y: -1rem;
+  grid-area: tommy;
+  color: rgba(255, 255, 255, 0.788);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Skateboards {
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.842);
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'text form'
+    'logos form';
+}
+#contact-text {
+  grid-area: text;
+}
+
+nav.mini-logos {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  grid-area: logos;
+}
+nav.mini-logos i {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  padding: 12px;
+  background-color: rgba(82, 82, 82, 0.842);
+  color: rgb(243, 244, 245);
+  font-size: 15px;
+}
+.signup-form {
+  margin-top: 20px;
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signup-form input {
+  margin: auto;
+  width: 300px;
+  height: 40px;
+}
+button {
+  background-color: rgb(185, 2, 2);
+  color: antiquewhite;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 20%;
+}
+#contact-text{padding: 10px;
+
+}
+]
